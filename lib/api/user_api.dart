@@ -9,6 +9,7 @@ class UserAPI {
   String baseUrl = 'https://edutiv-capstone.herokuapp.com';
 
   Future<List<UserModel>> fetchAllUser() async {
+
     Response response = await Dio().get(baseUrl + '/user');
 
     if (response.statusCode == 200) {
@@ -22,6 +23,7 @@ class UserAPI {
   }
 
   Future<UserModel> fetchUserById(int id) async {
+
     final prefs = await SharedPreferences.getInstance();
     final String? token = prefs.getString('token');
     Response response = await Dio().get(
@@ -39,6 +41,7 @@ class UserAPI {
   }
 
   Future<UserModel> updateProfile(int specializationId) async {
+  
     final prefs = await SharedPreferences.getInstance();
     final String? token = prefs.getString('token');
     try {
