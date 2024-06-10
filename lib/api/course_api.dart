@@ -7,9 +7,11 @@ import 'package:shared_preferences/shared_preferences.dart';
 import '../model/review/review_model.dart';
 
 class CourseAPI {
+
   String baseUrl = 'https://edutiv-capstone.herokuapp.com';
 
   Future<List<CourseModel>> fetchAllCourse() async {
+
     Response response = await Dio().get(baseUrl + '/course');
 
     if (response.statusCode == 200) {

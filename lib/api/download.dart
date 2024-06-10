@@ -14,6 +14,7 @@ Future open(int enrolledCourseId, String fileName) async {
 }
 
 Future<File>? startDownload(int enrolledCourseId, String fileName) async {
+
   final prefs = await SharedPreferences.getInstance();
   final String? token = prefs.getString('token');
   double progress = 0.0;
