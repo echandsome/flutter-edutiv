@@ -20,6 +20,7 @@ class CourseCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+  
     bool isAvailable = true;
     return Container(
       height: 116,

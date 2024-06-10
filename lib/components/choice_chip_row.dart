@@ -7,6 +7,7 @@ class ChoiceChipRow extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+
     final List categories = [
       'All',
       'Backend Engineer',
@@ -14,6 +15,7 @@ class ChoiceChipRow extends StatelessWidget {
       'Mobile Developer',
       'UI/UX Designer',
     ];
+    
     return Row(
       children: [
         Expanded(

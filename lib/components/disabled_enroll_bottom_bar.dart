@@ -9,6 +9,7 @@ class DisabledEnrollBottomBar extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+  
     final course = Provider.of<CourseViewModel>(context);
     final user = Provider.of<ProfileViewModel>(context);
     return Container(
