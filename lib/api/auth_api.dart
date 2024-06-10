@@ -9,6 +9,7 @@ class AuthAPI {
   String baseUrl = 'https://edutiv-capstone.herokuapp.com';
 
   Future<TokenModel> login(String email, String password) async {
+  
     try {
       EasyLoading.show(status: 'Loading...');
       Response response = await Dio().post(

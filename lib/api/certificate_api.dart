@@ -11,6 +11,7 @@ import 'package:printing/printing.dart';
 import '../components/data.dart';
 
 class CertificateAPI {
+
   static Future<File> generate(
       PdfPageFormat pageFormat, CustomData data) async {
     final pdf = pw.Document();

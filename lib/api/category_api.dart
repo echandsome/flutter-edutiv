@@ -6,6 +6,7 @@ class CategoryAPI {
   String baseUrl = 'https://edutiv-capstone.herokuapp.com';
 
   Future<List<CategoryModel>> fetchAllCategory() async {
+  
     Response response = await Dio().get(baseUrl + '/category');
 
     if (response.statusCode == 200) {
