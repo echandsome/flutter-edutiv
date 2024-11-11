@@ -10,6 +10,7 @@ class ConfirmPasswordResetScreen extends StatefulWidget {
 
 class _ConfirmPasswordResetScreenState
     extends State<ConfirmPasswordResetScreen> {
+    
   @override
   Widget build(BuildContext context) {
     return Scaffold(
